@@ -1,0 +1,13 @@
+Name: Test Project
+
+on: pull request
+branches:
+  - main  
+Jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run a one-line script
+        run: echo "Hello, World!"
